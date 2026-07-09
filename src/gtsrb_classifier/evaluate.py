@@ -11,7 +11,6 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-import torch
 from torch import nn
 
 from gtsrb_classifier.config import CLASS_NAMES, TrainingConfig
@@ -19,7 +18,13 @@ from gtsrb_classifier.data import build_dataloaders
 from gtsrb_classifier.engine import evaluate, make_classification_report
 from gtsrb_classifier.model import build_model
 from gtsrb_classifier.plots import plot_confusion_matrix
-from gtsrb_classifier.utils import ensure_dir, get_device, load_checkpoint, save_json, seed_everything
+from gtsrb_classifier.utils import (
+    ensure_dir,
+    get_device,
+    load_checkpoint,
+    save_json,
+    seed_everything,
+)
 
 
 def parse_args() -> argparse.Namespace:

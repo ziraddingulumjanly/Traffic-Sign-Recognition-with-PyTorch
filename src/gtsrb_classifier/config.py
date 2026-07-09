@@ -13,7 +13,6 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
-
 CLASS_NAMES: list[str] = [
     "Speed limit (20km/h)",
     "Speed limit (30km/h)",

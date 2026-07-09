@@ -9,8 +9,8 @@ grids, and reusable plotting functions that can be imported from scripts.
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
 import matplotlib.pyplot as plt
 import numpy as np
