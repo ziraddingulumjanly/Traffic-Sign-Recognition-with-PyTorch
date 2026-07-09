@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-from typing import Any
+from typing import Annotated, Any
 
 import torch
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -60,7 +60,7 @@ def health() -> dict[str, Any]:
 
 
 @app.post("/predict")
-async def predict(file: UploadFile = File(...)) -> dict[str, Any]:
+async def predict(file: Annotated[UploadFile, File(...)]) -> dict[str, Any]:
     """Predict the traffic sign class from an uploaded image."""
     if MODEL is None:
         raise HTTPException(
