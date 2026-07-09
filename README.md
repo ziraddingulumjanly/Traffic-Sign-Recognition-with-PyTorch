@@ -18,14 +18,13 @@ This repository is designed to be simple but professional:
 
 ## Problem
 
-The model learns a mapping
+The model learns a mapping:
 
-\[
-    f_\theta(x) \rightarrow \hat{y}, \qquad \hat{y} \in \{0, 1, \dots, 42\}
-\]
+$$
+f_\theta(x) \rightarrow \hat{y}, \qquad \hat{y} \in \{0, 1, \dots, 42\}
+$$
 
-where \(x\) is a traffic sign image and \(\hat{y}\) is one of 43 GTSRB traffic sign classes.
-
+where `$x$` is a traffic sign image and `$\hat{y}$` is one of the 43 GTSRB traffic sign classes.
 ## Dataset
 
 The project uses `torchvision.datasets.GTSRB`, so the dataset can be downloaded directly from code:
