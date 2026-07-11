@@ -1,7 +1,5 @@
 # German Traffic Sign Recognition with PyTorch
 
-**Author:** Ziraddin Gulumjanli, 2026
-
 A compact, production-style computer vision project for classifying German traffic signs from the **GTSRB** dataset.
 
 ![Cover Image](cover.png)
